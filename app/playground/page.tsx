@@ -11,9 +11,9 @@ export default function PlaygroundPage() {
     <div className="space-y-6">
       <div>
         <h1 className="mb-2 text-3xl font-semibold">Playground</h1>
-        <p className="text-gray-400">
-          This page itself is a Server Component — interactive components below opt in with{" "}
-          <code className="rounded bg-gray-100 px-1 text-sm text-gray-600">use client</code>.
+        <p className="text-muted">
+          This page itself is a Server Component - interactive components below opt in with{" "}
+          <code className="code">use client</code>.
         </p>
       </div>
 
@@ -87,11 +87,10 @@ export default function PlaygroundPage() {
         title="6. Shared layout"
         description="app/layout.tsx wraps every page. That is why Header and Footer appear here automatically."
       >
-        <p className="text-sm text-gray-400">
-          See{" "}
-          <code className="rounded bg-gray-100 px-1">components/Header.tsx</code>{" "}
-          or{" "}
-          <code className="rounded bg-gray-100 px-1">app/layout.tsx</code> and notice that the header and footer are the same on every page.
+        <p className="text-sm text-muted">
+          See <code className="code">components/Header.tsx</code> or{" "}
+          <code className="code">app/layout.tsx</code> and notice that the header
+          and footer are the same on every page.
         </p>
       </PlaygroundSection>
     </div>

@@ -3,11 +3,21 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --muted: #9ca3af;
+  --muted-foreground: #4b5563;
+  --surface: #f9fafb;
+  --code: #f3f4f6;
+  --border: #e5e7eb;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-surface: var(--surface);
+  --color-code: var(--code);
+  --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -16,6 +26,11 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --muted: #6b7280;
+    --muted-foreground: #9ca3af;
+    --surface: #171717;
+    --code: #1f2937;
+    --border: #374151;
   }
 }
 
@@ -23,4 +38,18 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .btn {
+    @apply rounded border border-border px-3 py-1 hover:bg-surface hover:text-muted-foreground;
+  }
+
+  .code {
+    @apply rounded bg-code px-1.5 py-0.5 text-sm text-muted-foreground;
+  }
+
+  .card {
+    @apply rounded bg-surface p-3 text-muted-foreground;
+  }
 }

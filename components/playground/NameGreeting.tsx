@@ -12,7 +12,7 @@ export default function NameGreeting() {
         value={name}
         onChange={(event) => setName(event.target.value)}
         placeholder="Type your name"
-        className="w-full max-w-xs rounded border px-3 py-1"
+        className="w-full max-w-xs rounded border border-border px-3 py-1"
       />
       <p>{name ? `Hello, ${name}!` : "Hello, stranger!"}</p>
     </div>

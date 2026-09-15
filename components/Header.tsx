@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="border-b px-6 py-4">
+    <header className="border-b border-border px-6 py-4">
       <div className="mx-auto flex max-w-4xl items-center justify-between">
         <Link href="/" className="text-lg font-semibold">
           React Test
