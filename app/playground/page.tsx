@@ -94,20 +94,6 @@ export default function PlaygroundPage() {
           <code className="rounded bg-gray-100 px-1">app/layout.tsx</code> and notice that the header and footer are the same on every page.
         </p>
       </PlaygroundSection>
-
-      <PlaygroundSection
-        title="7. Route Handlers (API routes)"
-        description="Files named route.ts inside app/api/ expose HTTP endpoints. Try opening the link below."
-      >
-        <p className="text-sm">
-          <a href="/api/quote" target="_blank" className="underline">
-            /api/quote
-          </a>{" "}
-          → app/api/quote/route.ts returns JSON. The quote above uses the same
-          data via{" "}
-          <code className="rounded bg-gray-100 px-1 text-gray-600">lib/quotes.ts</code>.
-        </p>
-      </PlaygroundSection>
     </div>
   );
 }
